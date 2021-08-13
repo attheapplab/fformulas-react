@@ -50,11 +50,11 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'CNAME' },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'CNAME' },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       // https://webpack.js.org/plugins/mini-css-extract-plugin/#filename
       filename: 'css/index.[contenthash].css',
